@@ -1,0 +1,297 @@
+/*   --- Formatação do Menu ---   */
+.navbar {
+    background: linear-gradient(135deg, #0b5a6d, #0d7a94);
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    max-width: 1300px; /* Largura fixa recomendada */
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;           /* Altura fixa recomendada */
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color, #fff);
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2.5rem;
+}
+
+.menu li a {
+    color: var(--text-color, #fff);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 0;
+}
+
+.menu li a:hover {
+    color: var(--accent-color, #f3ef06);
+}
+
+/*   --- Formatação do rodapé ---   */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Faz o conteúdo principal crescer para empurrar o footer para baixo */
+.section#sobre {
+    flex: 1;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e4ed);
+}
+
+/* Footer fixo no final */
+footer {
+    color: rgb(2, 2, 2);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;           /* Importante */
+    width: 100%;
+}
+
+/*   --- Formatação da página sobre mim ---   */
+.section#sobre {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e4ed);
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: stretch;
+    min-height: 420px;
+}
+
+/* Foto */
+.profile-pic {
+    width: 100%;
+    max-width: 340px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px 0 0 12px;
+    flex-shrink: 0;
+}
+
+/* Bloco azul */
+.about-text {
+    flex: 1;
+    background: linear-gradient(135deg, #0b5a6d, #0d7a94);
+    color: white;
+    padding: 55px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* --- Largura do Sublinho --- */
+.about-text .divider {
+    width: 100%;            /* ← Alterado para ocupar todo o espaço */
+    height: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    margin-bottom: 35px;
+    border-radius: 3px;
+}
+
+.about-text p {
+    font-size: 15px;
+    line-height: 1.70;
+    margin-bottom: 6px;
+    opacity: 0.95;
+}
+
+/* Parte inferior */
+.bottom-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-column, .experience-column {
+    flex: 1;
+}
+
+.contact-column h2, .experience-column h2 {
+    color: #0b5a6d;
+    border-bottom: 3px solid #0d7a94;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.contact-column p {
+    margin: 12px 0;
+    font-size: 1.05rem;
+}
+
+/*   --- Formatação da página Formação ---   */
+.formacao-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    font-size: 2.2rem;
+    color: #0b5a6d;
+    border-bottom: 3px solid #0d7a94;
+    padding-bottom: 12px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.formacao-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 22px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.formacao-item:last-child {
+    border-bottom: none;
+}
+
+.formacao-info h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.35rem;
+    color: #0b5a6d;
+}
+
+.formacao-info p {
+    margin: 4px 0;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.formacao-date {
+    text-align: right;
+    color: #0d7a94;
+    font-weight: 500;
+    min-width: 160px;
+    padding-top: 4px;
+}
+
+.formacao-date span {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+
+/*   --- Formatação da página Contato ---   */
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 70%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0d7a94;
+    outline: none;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    display: none;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #0d7a94;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0b5a6d;
+}
+
+/*   --- Validação de msg ---   */
+.error {
+    border-color: #e74c3c !important;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
